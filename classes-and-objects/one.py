@@ -1,14 +1,13 @@
 # Create a class `Rectangle` with attributes `length` and `width`. Include methods to calculate the area and perimeter.
 # create a class
-# create attributes
+# create a constructor
+# create the attributes
+# create the methods
+# create an object
 
-class Rectangle:
-    length = 12
-    width = 6
+from Rectangle import Rectangle
 
-    def calc(obj):
-        area = obj.length * obj.width
-        print(area)
+rect = Rectangle(25, 8)
 
-Rectangle.calc = classmethod(Rectangle.calc)
-Rectangle.calc()
+rect.claclArea()
+rect.calcPerimeter()
