@@ -14,8 +14,7 @@
 #     else:
 #         return getFibonacci(num-1) + getFibonacci(num-2)
 
-
-# print(getFibonacci(5))
+# print(getFibonacci(100))
 
 # second method
 def fibonacci(n, memoDict={}):
@@ -31,4 +30,4 @@ def fibonacci(n, memoDict={}):
         memoDict[n] = fibonacci(n-1, memoDict) + fibonacci(n-2, memoDict)
         return memoDict[n]
 
-print(fibonacci(5)) 
+print(fibonacci(100)) 
